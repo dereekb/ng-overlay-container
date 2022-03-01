@@ -1,0 +1,58 @@
+{
+  "name": "ng-overlay-container",
+  "version": "13.0.0",
+  "description": "Making the creation of overlays a piece of 🍰",
+  "author": "Marius Schulze",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schulzi66/ng-overlay-container.git"
+  },
+  "bugs": {
+    "url": "https://github.com/schulzi66/ng-overlay-container/issues"
+  },
+  "homepage": "https://ng-overlay-container.netlify.app",
+  "keywords": [
+    "angular",
+    "cdk",
+    "typescript",
+    "overlay",
+    "container",
+    "material",
+    "popup",
+    "popover"
+  ],
+  "main": "./bundles/ng-overlay-container.umd.js",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/cdk": "^13.2.4",
+    "@angular/common": "^13.2.4",
+    "@angular/core": "^13.2.4",
+    "@angular/material": "^13.2.4"
+  },
+  "module": "fesm2015/ng-overlay-container.mjs",
+  "es2020": "fesm2020/ng-overlay-container.mjs",
+  "esm2020": "esm2020/ng-overlay-container.mjs",
+  "fesm2020": "fesm2020/ng-overlay-container.mjs",
+  "fesm2015": "fesm2015/ng-overlay-container.mjs",
+  "typings": "ng-overlay-container.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./ng-overlay-container.d.ts",
+      "esm2020": "./esm2020/ng-overlay-container.mjs",
+      "es2020": "./fesm2020/ng-overlay-container.mjs",
+      "es2015": "./fesm2015/ng-overlay-container.mjs",
+      "node": "./fesm2015/ng-overlay-container.mjs",
+      "default": "./fesm2020/ng-overlay-container.mjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}

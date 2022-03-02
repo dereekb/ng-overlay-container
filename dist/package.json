@@ -21,7 +21,6 @@
     "popup",
     "popover"
   ],
-  "main": "./bundles/ng-overlay-container.umd.js",
   "license": "MIT",
   "dependencies": {
     "tslib": "^2.0.0"
@@ -32,23 +31,23 @@
     "@angular/core": "^13.2.4",
     "@angular/material": "^13.2.4"
   },
-  "module": "fesm2015/ng-overlay-container.mjs",
-  "es2020": "fesm2020/ng-overlay-container.mjs",
-  "esm2020": "esm2020/ng-overlay-container.mjs",
-  "fesm2020": "fesm2020/ng-overlay-container.mjs",
-  "fesm2015": "fesm2015/ng-overlay-container.mjs",
-  "typings": "ng-overlay-container.d.ts",
+  "module": "./dist/fesm2015/ng-overlay-container.mjs",
+  "es2020": "./dist/fesm2020/ng-overlay-container.mjs",
+  "esm2020": "./dist/esm2020/ng-overlay-container.mjs",
+  "fesm2020": "./dist/fesm2020/ng-overlay-container.mjs",
+  "fesm2015": "./dist/fesm2015/ng-overlay-container.mjs",
+  "typings": "./dist/ng-overlay-container.d.ts",
   "exports": {
     "./package.json": {
-      "default": "./package.json"
+      "default": "./dist/package.json"
     },
     ".": {
-      "types": "./ng-overlay-container.d.ts",
-      "esm2020": "./esm2020/ng-overlay-container.mjs",
-      "es2020": "./fesm2020/ng-overlay-container.mjs",
-      "es2015": "./fesm2015/ng-overlay-container.mjs",
-      "node": "./fesm2015/ng-overlay-container.mjs",
-      "default": "./fesm2020/ng-overlay-container.mjs"
+      "types": "./dist/ng-overlay-container.d.ts",
+      "esm2020": "./dist/esm2020/ng-overlay-container.mjs",
+      "es2020": "./dist/fesm2020/ng-overlay-container.mjs",
+      "es2015": "./dist/fesm2015/ng-overlay-container.mjs",
+      "node": "./dist/fesm2015/ng-overlay-container.mjs",
+      "default": "./dist/fesm2020/ng-overlay-container.mjs"
     }
   },
   "sideEffects": false,

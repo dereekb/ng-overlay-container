@@ -12,8 +12,7 @@
     "build-lib:prod": "yarn run copy-readme && ng build ng-overlay-container --configuration production",
     "copy-readme": "cpy README.md projects/ng-overlay-container && cpy README.md src/assets",
     "npm-publish": "npm publish ./dist/ng-overlay-container",
-    "deploy:pipeline": "yarn run build-lib:prod && yarn publish ./dist/ng-overlay-container",
-    "postinstall": "ngcc"
+    "deploy:pipeline": "yarn run build-lib:prod && yarn publish ./dist/ng-overlay-container"
   },
   "module": "./dist/fesm2015/ng-overlay-container.mjs",
   "es2020": "./dist/fesm2020/ng-overlay-container.mjs",

@@ -26,10 +26,10 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/cdk": "^13.2.4",
-    "@angular/common": "^13.2.4",
-    "@angular/core": "^13.2.4",
-    "@angular/material": "^13.2.4"
+    "@angular/cdk": "^13.0.0",
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0",
+    "@angular/material": "^13.0.0"
   },
   "module": "./dist/fesm2015/ng-overlay-container.mjs",
   "es2020": "./dist/fesm2020/ng-overlay-container.mjs",

@@ -15,6 +15,22 @@
     "deploy:pipeline": "yarn run build-lib:prod && yarn publish ./dist/ng-overlay-container",
     "postinstall": "ngcc"
   },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": {
+      "default": "./dist/package.json"
+    },
+    ".": {
+      "types": "./dist/ng-overlay-container.d.ts",
+      "esm2020": "./dist/esm2020/ng-overlay-container.mjs",
+      "es2020": "./dist/fesm2020/ng-overlay-container.mjs",
+      "es2015": "./dist/fesm2015/ng-overlay-container.mjs",
+      "node": "./dist/fesm2015/ng-overlay-container.mjs",
+      "default": "./dist/fesm2020/ng-overlay-container.mjs"
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/cdk": "^13.2.4",

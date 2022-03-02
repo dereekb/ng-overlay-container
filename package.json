@@ -38,6 +38,9 @@
     }
   },
   "private": true,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "peerDependencies": {
     "@angular/cdk": "^13.0.0",
     "@angular/common": "^13.0.0",

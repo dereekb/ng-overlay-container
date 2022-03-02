@@ -15,9 +15,6 @@
     "deploy:pipeline": "yarn run build-lib:prod && yarn publish ./dist/ng-overlay-container",
     "postinstall": "ngcc"
   },
-  "files": [
-    "dist"
-  ],
   "module": "./dist/fesm2015/ng-overlay-container.mjs",
   "es2020": "./dist/fesm2020/ng-overlay-container.mjs",
   "esm2020": "./dist/esm2020/ng-overlay-container.mjs",
